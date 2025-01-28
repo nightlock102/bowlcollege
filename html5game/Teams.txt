@@ -7,7 +7,7 @@
 5	UCLA	0	1	$c30214	$dc0015	$ffffff	$dc0015	CLA	10	7	0	0	0	0	40	15	1
 6	Michigan S.	0	1	$ffffff	$3289f7	$ffffff	$F1D209	MIS	7	6	0	0	0	2	17	0	1
 7	Illinois	0	1	$aaaaaa	$000000	$aaaaaa	$000000	IL.	6	2	0	0	0	1	5	0	0
-8	Ole Miss	0	2	$161616	$361d7d	$ffffff	$361d7d	BAL	7	8	0	0	0	0	45	19	0
+8	Ole Miss	0	2	$161616	$361d7d	$ffffff	$361d7d	MS.	7	8	0	0	0	0	45	19	0
 9	Texas S.	0	2	$fb4f14	$1a1a1a	$ffffff	$fb4f14	TXS	10	7	0	0	0	0	42	14	0
 10	Texas A&M	0	2	$d44200	$4f3531	$FFFFFF	$d44200	T.A	6	6	0	0	0	0	40	61	0
 11	Texas	0	2	$000000	$222121	$f8e400	$000000	TX.	6	7	0	0	0	0	38	27	0

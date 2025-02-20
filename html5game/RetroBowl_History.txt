@@ -55,5 +55,5 @@ year	winner	score	loser	human
 2020	Kansas City	31-20	S.F	0
 2021	Tampa Bay	31-9	K.C	0
 2022	Los Angeles R	23-20	CIN	0
-2023	Kansas City	38-35	PHI	0
-2024	Philadelphia	40-22	K.C 	0
+2023	Philadelphia	40-22	K.C 	0
+2024	

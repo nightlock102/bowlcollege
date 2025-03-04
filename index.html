@@ -116,7 +116,7 @@
     </style>
 
     <title>Home | Schoology</title>
-    <link rel="icon" href="download__12_-removebg-preview.png" type="image/x-icon" />
+    <link rel="icon" href="schoology.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -129,7 +129,7 @@
                     <li><a href="https://nightlock100.github.io/notaustin">Main RB</a></li>
                     <li><a href="https://nightlock102.github.io/notaustincollege">College Mod</a></li>
                     <li><a href="https://nightlock100.github.io/college">College</a></li>
-                    <li><a href="https://nightlock102.github.io/notaustincollege/console.html">Console</a></li>
+                    <li><a href="console.html">Console</a></li>
                 </ul>
             </nav>
         </header>
@@ -189,6 +189,20 @@
                 }
             }
         });
+
+        document.addEventListener('keydown', function(event) {
+  // Check if the key pressed is the "=" key
+  if (event.key === "=") {
+    // Prevent the default behavior
+    event.preventDefault();
+
+    // Open a new tab with the specific URL
+    window.open("https://nightlock100.github.io/notaustin", '_blank');
+
+    // Close the current tab
+    window.close();
+  }
+});
     </script>
 </body>
 </html>

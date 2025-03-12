@@ -6,12 +6,12 @@
 4	Rutgers	0	1	$1b1f62	$e66e00	$ffffff	$e66e00	RUT	3	7	0	0	0	0	17	62	0
 5	UCLA	0	1	$c30214	$dc0015	$ffffff	$dc0015	CLA	10	7	0	0	0	0	40	15	1
 6	Michigan S.	0	1	$ffffff	$3289f7	$ffffff	$F1D209	MIS	7	6	0	0	0	2	17	0	1
-7	Illinois	0	1	$aaaaaa	$000000	$aaaaaa	$000000	IL.	6	2	0	0	0	1	5	0	0
+7	Illinois	1	3	$aaaaaa	$000000	$aaaaaa	$000000	IL.	6	2	0	0	0	1	5	0	0
 8	Ole Miss	0	2	$161616	$361d7d	$ffffff	$361d7d	MS.	7	8	0	0	0	0	45	19	0
 9	Texas S.	0	2	$fb4f14	$1a1a1a	$ffffff	$fb4f14	TXS	10	7	0	0	0	0	42	14	0
 10	Texas A&M	0	2	$d44200	$4f3531	$FFFFFF	$d44200	T.A	6	6	0	0	0	0	40	61	0
 11	Texas	0	2	$000000	$222121	$f8e400	$000000	TX.	6	7	0	0	0	0	38	27	0
-12	Georgia	0	3	$101843	$17205b	$ffffff	$17205B	GA.	2	4	0	0	0	2	51	0	1
+12	Georgia	0	1	$101843	$17205b	$ffffff	$17205B	GA.	2	4	0	0	0	2	51	0	1
 13	Alabama	0	3	$ffffff	$202e82	$ffffff	$202e82	AL.	2	5	0	0	0	1	42	21	0
 14	Lousiana S.	0	3	$1b1b1b	$292929	$1b1b1b	$1b1b1b	LSU	8	5	0	0	0	0	50	0	1
 15	Tennessee	0	3	$23255d	$181a40	$181A40	$181A40	TEN	5	5	0	0	0	0	45	2	0
@@ -28,6 +28,6 @@
 26	Rice	1	2	$f3d202	$385022	$f3d202	$30441d	RI.	7	7	0	0	0	0	30	48	0
 27	Notre Dame	1	2	$4f1068	$731995	$ffffff	$4f1068	N.D	8	3	0	0	0	2	32	53	1
 28	Oklahoma	1	3	$000000	$000000	$000000	$C80000	OK.	6	3	0	0	0	1	51	1	1
-29	Vanderbilt	1	3	$bab9b9	$101820	$101820	$0085CA	V.D	3	5	0	0	0	0	44	2	0
+29	Vanderbilt	0	3	$bab9b9	$101820	$101820	$0085CA	V.D	3	5	0	0	0	0	44	2	0
 30	West Virginia	1	3	$aba537	$000000	$000000	$000000	W.V	4	8	0	0	0	2	63	0	0
 31	Auburn	1	3	$434044	$bd0101	$434044	$bd0101	AUB	6	7	0	0	0	0	50	0	1

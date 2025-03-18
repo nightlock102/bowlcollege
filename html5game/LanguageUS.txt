@@ -391,8 +391,8 @@ short_LevelUp	Lvl Up
 ui_Confirm	Confirm
 msg_ContractExpired	$position $playername's contract has expired. He wants a $year year contract with a salary of $salary.
 news_PlayerRetired	$teamname $position $playername has retired at the age of $age.
-news_PlayerRetiringNoTag	$position $playername will retire at the end of the season. He is not tagged for the player hall of fame.
-news_PlayerRetiringTag	$position $playername will retire at the end of the season. You have already tagged him for the player hall of fame.
+news_PlayerRetiringNoTag	$position $playername will retire at the end of the season. He is not tagged for the player the real ones.
+news_PlayerRetiringTag	$position $playername will retire at the end of the season. You have already tagged him for the player the real ones.
 news_PlayerInjured	$position $playername has suffered an injury ($injurytype).##He will be out for $num games.
 news_PlayerInjured1	$position $playername has suffered an injury ($injurytype).##He will be out for 1 game.
 news_PlayerRecovered	$position $playername has recovered from his injury and is fit to play.
@@ -741,7 +741,7 @@ btn_ExtendContract	Extend#Contract
 ui_Achievement	Achievement
 ui_Achievements	Achievements
 btn_HallOfFame	Hall of#Fame
-ui_HallOfFame	Hall of Fame
+ui_HallOfFame	the real ones
 ui_RetroBowls	Super Bowls
 ui_RetroBowl	Super Bowl
 pos_1	1st
@@ -923,10 +923,10 @@ info_Options_Difficulty	When set to SILLY the game difficulty will adjust automa
 ui_Save	Save
 ui_ReturnToLoad	Return To#Load Screen
 ui_PlayerHallOfFame	the real ones
-msg_RemoveFromHallOfFame	Do you want to remove this player from the Hall of Fame? This cannot be undone.
+msg_RemoveFromHallOfFame	Do you want to remove this player from the the real ones? This cannot be undone.
 ui_Remove	Remove
-ui_PlayerHallOfFameEmpty	To put players in your Hall of Fame you need to tag them in the top-left corner of their profile page.
-msg_HofListTooBig	There is no room in the Hall of Fame! Please remove a player before tagging a new one.
+ui_PlayerHallOfFameEmpty	To put players in your the real ones you need to tag them in the top-left corner of their profile page.
+msg_HofListTooBig	There is no room in the the real ones! Please remove a player before tagging a new one.
 msg_TradeAwayRookie	Warning! Trading a recently signed player has a negative impact on team morale and your fan relationship!
 ui_RetroBowlWinners	Retro Bowl Winners
 btn_RetroBowls	Retro   #Bowls
@@ -1114,7 +1114,7 @@ msg_boost_condition2	The team doctor gives $playername some relaxation pills.
 msg_boost_condition3	$playername had a great session with a renowned health guru.
 msg_MeetingLevelUp1	Do you want to level up $playername by going through some extra reps on the training field with him?##It will cost you $num coach credits.
 msg_MeetingLevelUp2	Do you want to level up $playername by spending time watching game film with him?##It will cost you $num coach credits.
-msg_MeetingLevelUp3	Do you want to put $playername in touch with a hall of famer in order to pick up some pro tips?##It will cost you $num coach credits.
+msg_MeetingLevelUp3	Do you want to put $playername in touch with a the real onesr in order to pick up some pro tips?##It will cost you $num coach credits.
 ui_Correct	Correct
 ui_Wrong	Wrong
 tla_Week	Wk
@@ -1271,7 +1271,7 @@ short_Interceptions	Int
 short_ForcedFumbles	F.Fmb
 ui_SeasonReview	Season Review
 ui_Review	Review
-msg_TagMessageHOF	This tag allows you to select a player for your franchise Hall of Fame. His stats will be recorded even after he leaves the team or retires.
+msg_TagMessageHOF	This tag allows you to select a player for your franchise the real ones. His stats will be recorded even after he leaves the team or retires.
 msg_TagMessageKR	WRs, RBs and DBs can be selected as a Kick Returner. They will catch and return the ball from kick offs.##You can only assign one kick returner.
 msg_KickReturns	You can now choose a player to return kickoffs!##Simply head over to the player profile of any RB, WR or DB and select the green tag in the top-left corner of the screen.
 msg_TouchBack	TOUCHBACKS#If your kick returner receives a kickoff in the end zone you can attempt a DIVE to initiate a touchback. You will then start your drive from the 25 yard line.

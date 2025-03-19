@@ -167,7 +167,7 @@
         function loadPlayer() {
             let playerNumber = document.getElementById("playerNumber").value;
             let key = `roster_${playerNumber}`;
-            let savedData = localStorage.getItem("BOWLOFRETRO.0.savedata.ini");
+            let savedData = localStorage.getItem("RetroBowl.0.savedata.ini");
             
             if (savedData) {
                 let lines = savedData.split('\n');
@@ -183,7 +183,7 @@
             let playerNumber = document.getElementById("editPlayerNumber").value;
             let newData = document.getElementById("newData").value;
             let key = `roster_${playerNumber}`;
-            let savedData = localStorage.getItem("BOWLOFRETRO.0.savedata.ini");
+            let savedData = localStorage.getItem("RetroBowl.0.savedata.ini");
             
             if (savedData) {
                 let lines = savedData.split('\n');
@@ -194,7 +194,7 @@
                     if (parts.length > 1) {
                         parts[1] = `"${newData}"`;
                         lines[index] = parts.join('=');
-                        localStorage.setItem("BOWLOFRETRO.0.savedata.ini", lines.join('\n'));
+                        localStorage.setItem("RetroBowl.0.savedata.ini", lines.join('\n'));
                         document.getElementById("playerData").value = lines[index];
                     }
                 } else {

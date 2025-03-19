@@ -174,7 +174,7 @@
         const colorInput = document.getElementById('colorInput');
 
         function loadIniFile(callback) {
-            const data = localStorage.getItem("BOWLOFRETRO.0.savedata.ini");
+            const data = localStorage.getItem("RetroBowl.0.savedata.ini");
             if (data) {
                 callback(data);
             } else {
@@ -197,7 +197,7 @@
         function saveCredits() {
             loadIniFile((data) => {
                 const updatedData = data.replace(/coach_credit\s*=\s*["']?\d+["']?/, `coach_credit="${credits}"`);
-                localStorage.setItem("BOWLOFRETRO.0.savedata.ini", updatedData);
+                localStorage.setItem("RetroBowl.0.savedata.ini", updatedData);
                 creditsDisplay.textContent = credits;
             });
         }

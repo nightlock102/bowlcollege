@@ -1,95 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Local Storage</title>
+    <title>LocalStorage Inspector</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        input {
-            width: 80%;
-        }
-        button {
-            margin-left: 10px;
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        input { width: 80%; }
+        button { margin-left: 10px; padding: 5px 10px; }
+        .active { background-color: #d1ffd1; } /* Highlight active file */
     </style>
 </head>
 <body>
-    <h1>Edit Local Storage</h1>
-       <button id="game">Back to game</button>
-
-    <script>
-        document.getElementById("game").onclick = () => {
-            window.location.href = "index.html"; // Redirect to page2.html  
-        };
-    </script>
+    <h1>LocalStorage Inspector</h1>
+    <button id="game">Back to Game</button>
     <button id="loadData">Load Local Storage Data</button>
     <table>
         <thead>
             <tr>
                 <th>Key</th>
                 <th>Value</th>
-                <th>Action</th>
+                <th>Actions</th>
             </tr>
         </thead>
-        <tbody id="storageTableBody">
-            <!-- Data will be populated here -->
-        </tbody>
+        <tbody id="storageTableBody"></tbody>
     </table>
 
     <script>
+        const currentFileKey = 'RetroBowl.0.savedata.ini'; // The file currently used by the game
+
+        document.getElementById("game").onclick = () => {
+            window.location.href = "index.html";
+        };
+
         document.getElementById("loadData").onclick = () => {
             const tableBody = document.getElementById("storageTableBody");
-            tableBody.innerHTML = ""; // Clear previous data
-            
-            // Loop through Local Storage  
+            tableBody.innerHTML = "";
+
             for (let i = 0; i < localStorage.length; i++) {
                 const key = localStorage.key(i);
                 const value = localStorage.getItem(key);
-                
-                // Create a new row for each key-value pair  
+
                 const row = document.createElement("tr");
+                if (key === currentFileKey) row.classList.add('active');
+
                 const keyCell = document.createElement("td");
                 const valueCell = document.createElement("td");
                 const actionCell = document.createElement("td");
-                
-                keyCell.textContent = key; // Set key  
-                
-                // Create an input for the value  
+
+                keyCell.textContent = key;
+
                 const input = document.createElement("input");
                 input.type = "text";
-                input.value = value; // Set initial value from Local Storage
-                
-                // Create a button to save changes  
+                input.value = value;
+
                 const editButton = document.createElement("button");
                 editButton.textContent = "Edit";
                 editButton.onclick = () => {
-                    // Update Local Storage with the new value  
                     localStorage.setItem(key, input.value);
-                    alert(`Updated ${key} to ${input.value}`);
+                    alert(`Updated ${key}`);
                 };
 
-                // Append elements to their respective cells  
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.onclick = () => {
+                    if (confirm(`Are you sure you want to delete ${key}?`)) {
+                        localStorage.removeItem(key);
+                        row.remove();
+                    }
+                };
+
                 valueCell.appendChild(input);
                 actionCell.appendChild(editButton);
-                
-                // Append cells to the row  
+                actionCell.appendChild(deleteButton);
+
                 row.appendChild(keyCell);
                 row.appendChild(valueCell);
                 row.appendChild(actionCell);
-                
-                // Append the row to the table body  
+
                 tableBody.appendChild(row);
             }
 

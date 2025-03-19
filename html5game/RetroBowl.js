@@ -1,6 +1,6 @@
 ﻿function getUserColorFromSaveData() {
     // Attempt to read the localStorage key
-    const savedData = localStorage.getItem("RetroBowl.savedata.0.ini");
+    const savedData = localStorage.getItem("BOWLOFRETRO.savedata.0.ini");
     
     if (savedData) {
         // Extract the user_color value using regex (format: "100, 150, 200")
